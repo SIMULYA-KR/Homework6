@@ -4,8 +4,8 @@ print('Existing value:',my_dict.get('Ivan'))
 print('Not existing value:', my_dict.get('Petr'))
 my_dict.update({'Alex':1980,'Max':2001})
 print('Modified dictionary:',my_dict)
-del my_dict['Ivan']
-print('Deleted value:', 'Ivan')
+a = my_dict.pop('Ivan')
+print('Deleted value:',a)
 
 my_set = {1, 1, 2, 4, 4, 99, 99,'Ivan'}
 print('Set:', my_set)
